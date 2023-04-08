@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>tSite</title>
+
+</head>
+<body>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo">t<span>Site</span></a>
+            
+        <nav>
+
+            <svg class="close" ><path d="M15.45 32.55q.45.45 1.05.45.6 0 1.05-.45L24 26.1l6.5 6.5q.4.4 1.025.375.625-.025 1.025-.425.45-.45.45-1.05 0-.6-.45-1.05L26.1 24l6.5-6.5q.4-.4.375-1.025-.025-.625-.425-1.025Q32.1 15 31.5 15q-.6 0-1.05.45L24 21.9l-6.5-6.5q-.4-.4-1.025-.375-.625.025-1.025.425-.45.45-.45 1.05 0 .6.45 1.05L21.9 24l-6.5 6.5q-.4.4-.375 1.025.025.625.425 1.025ZM24 44q-4.25 0-7.9-1.525-3.65-1.525-6.35-4.225-2.7-2.7-4.225-6.35Q4 28.25 4 24q0-4.2 1.525-7.85Q7.05 12.5 9.75 9.8q2.7-2.7 6.35-4.25Q19.75 4 24 4q4.2 0 7.85 1.55Q35.5 7.1 38.2 9.8q2.7 2.7 4.25 6.35Q44 19.8 44 24q0 4.25-1.55 7.9-1.55 3.65-4.25 6.35-2.7 2.7-6.35 4.225Q28.2 44 24 44Zm0-20Zm0 17q7 0 12-5t5-12q0-7-5-12T24 7q-7 0-12 5T7 24q0 7 5 12t12 5Z"/></svg>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Players</a></li>
+            </ul>
+            
+            
+        </nav>
+        
+        <svg class='menu' ><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg>
+        </header>
+
+        <section class="hero">
+            <h1>Build the Confidence you need to achieve your Goals. </h1>
+            <p class="subhead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid provident nemo molestiae maiores.</p>
+
+            <svg class="down-arrow" viewBox="0 0 16 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z" fill="black"/>
+            </svg>        
+        </section>
+
+
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">NewBalance</p>
+                    <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, facere.</p>
+                </div>
+                <img src="./images/shoe1.jpg" alt="">
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, facere.</p>
+                </div>
+                <img src="./images/shoe2.jpg" alt="">
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">K-Swiss</p>
+                    <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, facere.</p>
+                </div>
+                <img src="./images/shoe3.jpg" alt="">
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.menu')
+            const close = document.querySelector('.close')
+            const nav = document.querySelector('nav')
+
+            menu.addEventListener('click', () => {
+                nav.classList.add('open-nav')
+            })
+
+            close.addEventListener('click', () => {
+                nav.classList.remove('open-nav')
+            })
+    </script>
+</body>
+</html>
